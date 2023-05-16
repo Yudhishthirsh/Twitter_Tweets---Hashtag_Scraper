@@ -29,6 +29,9 @@ For Mac os: python3 TweetsScraping.py
 For Windows os : python Twitter_hashtag.py
 For Mac os: python3 Twitter_hashtag.py
 
+After Running these commands the ouptput is generated as filename : hashtagname that given in parameter followed by '.csv'.
+
+
 
 Notes:
 1) Twitter API has Rate limits over scraping data, after scrapping some data(example: 1000-3000) twitter will stops this automated script. Check Twitter documentation.
