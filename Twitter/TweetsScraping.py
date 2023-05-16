@@ -39,4 +39,4 @@ while True:
         break
 
 df = pd.DataFrame(tweet_list)
-df.to_csv("Path of the csv file where have to save csv file")
+df.to_csv("tweetsList.csv")
