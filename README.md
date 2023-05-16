@@ -29,7 +29,8 @@ For Mac os: python3 TweetsScraping.py
 For Windows os : python Twitter_hashtag.py
 For Mac os: python3 Twitter_hashtag.py
 
-After Running these commands the ouptput is generated as filename : hashtagname that given in parameter followed by '.csv'.
+After Running these commands the ouptput for hashtags is generated as filename : hashtagname that given in parameter followed by '.csv'.
+And output for tweet list for particular username will be generated in tweetsList.csv
 
 
 
