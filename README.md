@@ -1,4 +1,4 @@
-# Twitter_Tweets---Hashtag_Scraper
+# TwitterTweets---HashtagScraper
 
 Download pycharm and setup virtual enviroment in your pycharm inside the folder LinkedlnProfile_URLDataScraper using Command in terminal below.
 
