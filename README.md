@@ -1,38 +1,69 @@
 # TwitterTweets---HashtagScraper
 
-Download pycharm and setup virtual enviroment in your pycharm inside the folder LinkedlnProfile_URLDataScraper using Command in terminal below.
+1) Open the project and go to the Twitter in your windows terminal or on linux operating system.
 
-pip install virtualenv or can follow the below link to create virtual Environment
+2) Install all the required python packages using below command: 
 
-https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html#env-requirements
+        pip install -r requirements.txt
 
-After creating virtual environment in your project. install scrapy package in pycharm , install instaloader package using pip install instaloader , install pandas into the terminal using pip install pandas command in the Terminal To install all these packages use command pip install r- requirement.text
+3) Now go to the project directory using command below:
 
-Before Running the spider run this command to create python path for all python files in the directory $env:PYTHONPATH = "Path of Directory;$env:PYTHONPATH" Path of Directory:Main Project Directory which includes all files such as login,requirement and parameter
+         cd .\Twitter\
 
-To scrape data from linkedln (Profile Urls) need Linkedln Credentials
+4) After reaching LinkedlnProfileUrlScraper directory run below command to create the Python path over all the directories and files in the project.
 
-Inside Parameter File Make these changes
+   a) Command for Windows OS:
 
-1)Need to add your credentials(Twitter API credentials in Twitter Developer Account) in parameter.py file. 
-2)Enter the Hashtag for which have to scrape data as object hashtagName in parameter.py file.
-3)Enter the Since date upto which you have to scrape data as object dateSince in parameter.py file.
-4)Enter the No. of Tweets you are looking particular username as object numberOfTweets in parameter.py file.
-5)Enter the Username as object userName in parameter.py file.
+              command = $env:PYTHONPATH = "Absolute Path of Directory;$env:PYTHONPATH" # Abslolute path of this "LinkedlnProfileUrlScraper" directory
+  
+       While entering Absolute path of the directory ensure to change backword Slash (/) into forward slash(\) inside the path in case when running in windows machine.
 
-Now Go to the open terminal in pycharm : 
-1) Run command to scrape tweets of particular Username
-For Windows os : python TweetsScraping.py 
-For Mac os: python3 TweetsScraping.py 
+   b) Command for linux OS:   
 
-2) Run command to scrape users data for as per hashtags
-For Windows os : python Twitter_hashtag.py
-For Mac os: python3 Twitter_hashtag.py
+              Command : export PYTHONPATH="Absolute Path of Directory" # Abslolute path of this "LinkedlnProfileUrlScraper" directory i your linux machine
+  
+      In this case there is no need to change backward slash.
 
-After Running these commands the ouptput for hashtags is generated as filename : hashtagname that given in parameter followed by '.csv'.
-And output for tweet list for particular username will be generated in tweetsList.csv
+5)Inside Parameter File Make these changes
 
+    a)Need to add your credentials(Twitter API credentials in Twitter Developer Account) in parameter.py file. 
 
+    b)Enter the Hashtag for which have to scrape data as object hashtagName in parameter.py file.
+
+    c)Enter the Since date upto which you have to scrape data as object dateSince in parameter.py file.
+
+    d)Enter the No. of Tweets you are looking particular username as object numberOfTweets in parameter.py file.
+
+    e)Enter the Username as object userName in parameter.py file.
+
+6)Now Go to the open terminal in pycharm : 
+
+    a) Run command to scrape tweets of particular Usernam
+    
+         For Windows os : python TweetsScraping.py 
+         
+         For Mac os: python3 TweetsScraping.py 
+
+    b) Run command to scrape users data for as per hashtags
+
+         For Windows os : python Twitter_hashtag.py
+
+         For Mac os: python3 Twitter_hashtag.py
+
+7) The outputfile of the scraped records is generated inside scraperSkeleton(outer) folder having random name which has nomenclature as given below.
+
+     Output File name exaample : 20230518142546cfzl3.csv, 
+
+     a) Where 20230518 is the date on which file is created
+
+     b) Where 142546 followed by date is the time at which the file is created.
+ 
+     c) After time there are 5 alphanumeric characters
+
+Notes:
+1) This automated Script run successfully in the scrapy framework and able to scrape approx. 500 Linkedin profile URLs after that google asking for captcha verification.
+
+2) These Linked Profile URLs can be further used to scrape the profile data on linkedin.
 
 Notes:
 1) Twitter API has Rate limits over scraping data, after scrapping some data(example: 1000-3000) twitter will stops this automated script. Check Twitter documentation.
