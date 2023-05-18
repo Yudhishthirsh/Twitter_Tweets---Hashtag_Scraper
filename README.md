@@ -10,7 +10,7 @@
 
          cd .\Twitter\
 
-4) After reaching LinkedlnProfileUrlScraper directory run below command to create the Python path over all the directories and files in the project.
+4) After reaching Twitter  directory run below command to create the Python path over all the directories and files in the project.
 
    a) Command for Windows OS:
 
@@ -50,7 +50,7 @@
 
          For Mac os: python3 Twitter_hashtag.py
 
-7) The outputfile of the scraped records is generated inside scraperSkeleton(outer) folder having random name which has nomenclature as given below.
+7) The outputfile of the scraped records is generated inside Twitter folder having random name which has nomenclature as given below for Tweets scraping.
 
      Output File name exaample : 20230518142546cfzl3.csv, 
 
@@ -59,6 +59,8 @@
      b) Where 142546 followed by date is the time at which the file is created.
  
      c) After time there are 5 alphanumeric characters
+   
+8) The output file for twitter hashtags scraping, it will be generated as per given hashtagName in parameter.py file.
 
 Notes:
 1) This automated Script run successfully in the scrapy framework and able to scrape approx. 500 Linkedin profile URLs after that google asking for captcha verification.
