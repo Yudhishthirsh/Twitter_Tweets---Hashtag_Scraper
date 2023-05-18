@@ -88,10 +88,10 @@ def scrape(words, date_since, numtweet):
         # Function call to print tweet data on screen
         printtweetdata(i, ith_tweet)
         i = i + 1
-    filename = str(parameter.hashtagName) + '.csv'
+    fileName = str(parameter.hashtagName) + '.csv'
 
     # we will save our database as a CSV file.
-    db.to_csv(filename)
+    db.to_csv(fileName)
 
 
 if __name__ == '__main__':
