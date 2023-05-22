@@ -38,6 +38,8 @@ TwitterTweets : This TwitterTweets scraping framework is able to scrape tweets d
 This script supports linux, windows OS.
 
 The script description is mentioned below
+--
+
 1) Open the project and go to the Twitter in your windows terminal or on linux operating system.
 
 2) Install all the required python packages using below command: 
@@ -55,6 +57,12 @@ The script description is mentioned below
               command = $env:PYTHONPATH = "Absolute Path of Directory;$env:PYTHONPATH" # Abslolute path of this "LinkedlnProfileUrlScraper" directory
   
        While entering Absolute path of the directory ensure to change backword Slash (/) into forward slash(\) inside the path in case when running in windows machine.
+       
+To run this script in cmd.exe in windows os :
+
+              set PYTHONPATH=Absolute path of the directory;%PYTHONPATH%
+             
+              No need of changing backward slashes in (/) while using cmd.exe
 
    b) Command for linux OS:   
 
