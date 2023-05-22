@@ -1,5 +1,43 @@
 # TwitterTweets---HashtagScraper
+There are two twitter scraping in this repository .
 
+TwitterTweets : This TwitterTweets scraping framework is able to scrape tweets done by a person as per given since date.
+--
+
+   --user- Username of whose tweets need to be scraped
+   
+   --text- Text on each tweet
+   
+   --favorite_count- Number of likes on each tweet
+   
+   --retweet_count- Number of retweets on each tweet
+   
+   --created_at- At what time the Tweet is posted
+
+ HashtagScraping: This Hashtag scraping framework is able to scrape following data as per the hashtag used by people:
+ --
+ 
+   --Username- User who have used this particular hashtag
+   
+   --description- Description of user profile
+   
+   --location- Regional Location(Not exact) of user from where the post is posted.
+   
+   --following- Number of following 
+   
+   --followers- Number of followers
+   
+   --totaltweets- Total tweets done by user.
+   
+   --retweetcount- How many retweet done on that tweet.
+   
+   --text- Content in the posts
+   
+   --hashtags- All the Hashtags used in the same post
+
+This script supports linux, windows OS.
+
+The script description is mentioned below
 1) Open the project and go to the Twitter in your windows terminal or on linux operating system.
 
 2) Install all the required python packages using below command: 
